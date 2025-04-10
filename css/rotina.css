@@ -1,0 +1,81 @@
+/* ====================
+   ROTINA - DESIGN DARK POÉTICO
+==================== */
+body.dark-theme {
+  background-color: #101010;
+  color: #e2e2e2;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Botão de voltar + breadcrumb */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #181818;
+  border-bottom: 1px solid #333;
+}
+
+.btn-voltar {
+  color: #bbb;
+  background-color: transparent;
+  border: 1px solid #555;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #222;
+  color: #fff;
+  border-color: #888;
+  box-shadow: 0 0 10px rgba(255,255,255,0.08);
+}
+
+.breadcrumb-info {
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Conteúdo central */
+.rotina-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 40px;
+  animation: zoomIn 1s ease-out forwards;
+}
+
+.imagem-box img.rocklee-img {
+  width: 280px;
+  max-width: 90%;
+  filter: grayscale(100%) contrast(110%);
+  transition: all 0.4s ease;
+}
+
+.imagem-box img.rocklee-img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%) brightness(1.1);
+}
+
+/* Texto escuro com dor */
+.texto-rotina h1 {
+  font-size: 2.3em;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  text-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.texto-rotina p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #cccccc;
+  text-align: justify;
+  padding: 0 10px;
+  border-left: 4px solid #444;
+}
